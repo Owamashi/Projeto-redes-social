@@ -32,3 +32,36 @@ section#telefone {
     width: 311px;
     background: url('../imagens/frame-iphone.png')no-repeat;
 }
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px; /*largura*/
+    height: 471px; /*altura*/
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    /*quando se muda a largura a altura irá mudar automaticamente se ambos forem deixados iguais.*/
+    margin: 10px;
+    border-radius: 50%; /*irá ocupar metade, se metade é redondinho e a outra redondinho, irá ficar um circulo*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+} 
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    /*sem o box-sizing, a borda não irá fazer parte do 'objeto' que são os icones colocados, para que não saiam dos icones, se utiliza box-sizing no img para a borda fazer parte da 'caixa' = icone*/
+    transform: translate(-4px, -4px);
+    /*para que ele vá para o 'ladinho' quando se passa o mouse por cima*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    /*como o 'botão' se levantou a sombra tem que se afastar.*/
+    transition: transform 0.4s, border .4s;  
+    /*para que os botões tenham suavidade quando passar o mouse e a borda também*/
+}
+
